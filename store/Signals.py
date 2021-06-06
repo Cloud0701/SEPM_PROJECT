@@ -7,17 +7,12 @@ def CreateCustomer(sender,instance,created, **kwargs):
 		Customer.objects.create(
             user=instance,
             name = instance.username,
+            email = instance.email,
+
         )
 		
 post_save.connect(CreateCustomer,sender=User)
 
-def CreateOrder(sender,instance,created, **kwargs):
-	if created:
-		Order.objects.create(
-            user=instance,
-            name = instance.username,
-        )
-		
-post_save.connect(CreateOrder,sender=User)
+
 
 
