@@ -12,8 +12,7 @@ class Customer(models.Model):
 	def __str__(self):
 		return self.name
 
-class Tag(models.Model):
-	tag = models.CharField(max_length=200,null=True)
+
 	
 	def __str__(self):
 		return self.tag
@@ -28,7 +27,7 @@ class Product(models.Model):
 	price = models.FloatField()
 	digital = models.BooleanField(default=False,null=True, blank=True)
 	image = models.ImageField(null=True, blank=True)
-	category = models.OneToOneField(Tag,null=True,blank=True,on_delete=models.CASCADE)
+	
 
 
 	def __str__(self):
