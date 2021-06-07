@@ -9,13 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-	<link
-	  rel="stylesheet"
-	  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-	/>
 	<script type="text/javascript">
 		var user = '{{request.user}}'
 
@@ -68,20 +62,15 @@
 
 </head>
 <style>
-	body{
-		background-image: url('static/images/Web 1920 – 1.png');
+	.body{
+		background-image:url('static/images/Web 1920 – 1.png');
 		background-repeat: repeat;
-		
-	}
+	};
 </style>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #1c2237;"></nav>
-	  <a class="navbar-brand" href="{% url 'store' %}">
-		<div class="logo"> 
-			<i class="fa fa-angellist"></i>
-		At Your Door
-		</div></a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="{% url 'store' %}">Ecom</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -91,10 +80,9 @@
 	      <li class="nav-item active">
 	        <a class="nav-link" href="{% url 'store' %}">Store <span class="sr-only">(current)</span></a>
 	      </li>
-		
 		  <a class="nav-link" href="{% url 'account' %}">Account </a>
+	 
 	    </ul>
-		<a class="nav-link" href="{% url 'account' %}">Account </a>
 	    <div class="form-inline my-2 my-lg-0">
 	     	<a href="{% url 'logout' %}"class="btn btn-warning">Logout</a>
 	     	
