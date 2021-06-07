@@ -97,3 +97,9 @@ h1,h2,h3,h4,h5,h6{
 .hidden{
 	display: none!important;
 }
+.logo{
+	color: #ffe9ec;
+	padding: 10px;
+	font-size: 2.8rem;
+	font-weight: bold;
+}

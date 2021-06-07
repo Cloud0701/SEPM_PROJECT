@@ -1,1 +1,1 @@
-web: gunicorn SEPM_PROJECT.wsgi --log-file -
+web: gunicorn ecommerce.wsgi
